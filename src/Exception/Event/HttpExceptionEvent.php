@@ -6,7 +6,7 @@
  * Time: 20:50
  */
 
-namespace Simplex\Exception\Event;
+namespace Keiryo\Exception\Event;
 
 use Symfony\Component\HttpFoundation\Response;
 

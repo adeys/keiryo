@@ -6,9 +6,9 @@
  * Time: 21:26
  */
 
-namespace Simplex\Queue;
+namespace Keiryo\Queue;
 
-use Simplex\Queue\Contracts\JobInterface;
+use Keiryo\Queue\Contracts\JobInterface;
 
 abstract class AbstractJob implements JobInterface
 {

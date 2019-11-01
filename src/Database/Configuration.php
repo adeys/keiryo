@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Database;
+namespace Keiryo\Database;
 
-use Simplex\Database\Driver\DriverInterface;
-use Simplex\Database\Driver\SqliteDriver;
+use Keiryo\Database\Driver\DriverInterface;
+use Keiryo\Database\Driver\SqliteDriver;
 
 class Configuration
 {

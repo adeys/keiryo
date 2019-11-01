@@ -6,14 +6,14 @@
  * Time: 15:09
  */
 
-namespace Simplex\Http;
+namespace Keiryo\Http;
 
 use Psr\Container\ContainerInterface;
-use Simplex\Configuration\Configuration;
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Events\KernelRequestEvent;
-use Simplex\Events\KernelResponseEvent;
-use Simplex\Kernel as Simplex;
+use Keiryo\Configuration\Configuration;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Events\KernelRequestEvent;
+use Keiryo\Events\KernelResponseEvent;
+use Keiryo\Kernel as Keiryo;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Tracy\Debugger;
@@ -27,7 +27,7 @@ class Kernel
     protected $pipeline;
 
     /**
-     * @var \Simplex\Kernel
+     * @var \Keiryo\Kernel
      */
     private $kernel;
 
@@ -38,9 +38,9 @@ class Kernel
 
     /**
      * Kernel constructor.
-     * @param Simplex $kernel
+     * @param Keiryo $kernel
      */
-    public function __construct(Simplex $kernel)
+    public function __construct(Keiryo $kernel)
     {
         $this->kernel = $kernel;
         $this->pipeline = new Pipeline();

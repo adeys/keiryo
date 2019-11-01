@@ -1,0 +1,26 @@
+{
+    "name": "keiryo/queue",
+    "description": "Keiryo Job Queue component",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "K. Raphael",
+            "email": "raphalogou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-json": "*",
+        "keiryo/event-manager": "*"
+    },
+    "suggest": {
+        "kraph/pkached": "For using Kache as cache backend"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keiryo\\Queue\\": ""
+        }
+    }
+}

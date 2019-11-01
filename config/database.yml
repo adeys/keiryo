@@ -1,8 +1,0 @@
-default: simplex
-connections:
-  simplex:
-    type: sqlite
-    database: '%resources%/db/simplex/database.db'
-  askeet:
-    type: sqlite
-    database: '%resources%/db/askeet/database.db'

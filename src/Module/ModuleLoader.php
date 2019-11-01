@@ -6,18 +6,18 @@
  * Time: 18:07
  */
 
-namespace Simplex\Module;
+namespace Keiryo\Module;
 
 use Psr\Container\ContainerInterface;
-use Simplex\Configuration\Configuration;
-use Simplex\DataMapper\DataMapperServiceProvider;
-use Simplex\DataMapper\EntityManager;
-use Simplex\DataMapper\Mapping\MappingRegistry;
-use Simplex\Middleware\AuthenticationMiddleware;
-use Simplex\Renderer\TwigRenderer;
-use Simplex\Renderer\TwigServiceProvider;
-use Simplex\Routing\RouterInterface;
-use Simplex\Routing\SymfonyRouter;
+use Keiryo\Configuration\Configuration;
+use Keiryo\DataMapper\DataMapperServiceProvider;
+use Keiryo\DataMapper\EntityManager;
+use Keiryo\DataMapper\Mapping\MappingRegistry;
+use Keiryo\Middleware\AuthenticationMiddleware;
+use Keiryo\Renderer\TwigRenderer;
+use Keiryo\Renderer\TwigServiceProvider;
+use Keiryo\Routing\RouterInterface;
+use Keiryo\Routing\SymfonyRouter;
 
 class ModuleLoader
 {

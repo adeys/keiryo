@@ -6,7 +6,7 @@
  * Time: 16:50
  */
 
-namespace Simplex\Validation;
+namespace Keiryo\Validation;
 
 use Rakit\Validation\Validation;
 use Rakit\Validation\Validator as BaseValidator;

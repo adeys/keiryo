@@ -6,12 +6,12 @@
  * Time: 20:05
  */
 
-namespace Simplex\Queue;
+namespace Keiryo\Queue;
 
 use Kached\Kache;
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
-use Simplex\Queue\Contracts\QueueInterface;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Queue\Contracts\QueueInterface;
 
 class QueueServiceProvider extends AbstractServiceProvider
 {

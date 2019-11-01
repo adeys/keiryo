@@ -6,7 +6,7 @@
  * Time: 13:51
  */
 
-namespace Simplex\Configuration;
+namespace Keiryo\Configuration;
 
 use Symfony\Component\Yaml\Yaml;
 

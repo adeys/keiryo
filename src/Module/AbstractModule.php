@@ -6,11 +6,11 @@
  * Time: 18:32
  */
 
-namespace Simplex\Module;
+namespace Keiryo\Module;
 
-use Simplex\Configuration\Configuration;
-use Simplex\Renderer\TwigRenderer;
-use Simplex\Routing\RouteCollection;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Renderer\TwigRenderer;
+use Keiryo\Routing\RouteCollection;
 
 abstract class AbstractModule implements ModuleInterface
 {

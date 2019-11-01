@@ -6,7 +6,7 @@
  * Time: 13:35
  */
 
-namespace Simplex\Renderer;
+namespace Keiryo\Renderer;
 
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;

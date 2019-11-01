@@ -1,0 +1,25 @@
+{
+    "name": "keiryo/security",
+    "description": "Keiryo Security component",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "K. Raphael",
+            "email": "raphalogou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "suggest": {
+        "keiryo/database": "For using embedded database user provider",
+        "symfony/http-foundation": "For csrf validation package use"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keiryo\\Security\\": ""
+        }
+    }
+}

@@ -1,8 +1,8 @@
 <?php
 
-namespace Simplex\Routing;
+namespace Keiryo\Routing;
 
-use Simplex\Http\MiddlewareInterface;
+use Keiryo\Http\MiddlewareInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 interface RouterInterface

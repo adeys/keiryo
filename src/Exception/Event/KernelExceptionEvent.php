@@ -6,10 +6,10 @@
  * Time: 17:58
  */
 
-namespace Simplex\Exception\Event;
+namespace Keiryo\Exception\Event;
 
 use Psr\EventDispatcher\StoppableEventInterface;
-use Simplex\Events\StoppableEventTrait;
+use Keiryo\Events\StoppableEventTrait;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

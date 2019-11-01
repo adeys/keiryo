@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Routing;
+namespace Keiryo\Routing;
 
 trait RouteBuilderTrait
 {

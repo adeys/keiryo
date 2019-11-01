@@ -6,7 +6,7 @@
  * Time: 10:24
  */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
 interface IdentifiableInterface
 {

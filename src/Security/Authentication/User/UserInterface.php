@@ -6,7 +6,7 @@
  * Time: 02:12
  */
 
-namespace Simplex\Security\Authentication\User;
+namespace Keiryo\Security\Authentication\User;
 
 interface UserInterface
 {

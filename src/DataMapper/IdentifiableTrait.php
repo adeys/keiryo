@@ -6,7 +6,7 @@
  * Time: 10:31
  */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
 trait IdentifiableTrait
 {

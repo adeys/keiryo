@@ -6,7 +6,7 @@
  * Time: 16:10
  */
 
-namespace Simplex\Queue\Contracts;
+namespace Keiryo\Queue\Contracts;
 
 interface QueueInterface
 {

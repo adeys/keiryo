@@ -6,9 +6,9 @@
  * Time: 16:48
  */
 
-namespace Simplex\Plugin;
+namespace Keiryo\Plugin;
 
-use Simplex\EventManager\EventManagerInterface;
+use Keiryo\EventManager\EventManagerInterface;
 
 interface PluginInterface
 {

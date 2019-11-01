@@ -6,7 +6,7 @@
  * Time: 00:25
  */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
 class IdentityMap
 {

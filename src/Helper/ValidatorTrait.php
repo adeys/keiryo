@@ -6,10 +6,10 @@
  * Time: 18:52
  */
 
-namespace Simplex\Helper;
+namespace Keiryo\Helper;
 
 use Rakit\Validation\Validation;
-use Simplex\Validation\Validator;
+use Keiryo\Validation\Validator;
 
 trait ValidatorTrait
 {

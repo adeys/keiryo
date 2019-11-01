@@ -1,13 +1,13 @@
 <?php
 
-namespace Simplex\Routing\Middleware;
+namespace Keiryo\Routing\Middleware;
 
 use League\Container\Argument\ArgumentResolverTrait;
 use League\Container\ContainerAwareInterface;
 use League\Container\ContainerAwareTrait;
 use Psr\Container\ContainerInterface;
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Http\RequestHandlerInterface;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Http\RequestHandlerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -30,7 +30,7 @@ class DispatchMiddleware implements MiddlewareInterface, ContainerAwareInterface
      */
     public function process(Request $request, RequestHandlerInterface $handler): Response
     {
-        /** @var \Simplex\Routing\Route $route */
+        /** @var \Keiryo\Routing\Route $route */
         $route = $request->attributes->get('_route');
         $controller = $this->resolveController($route->getHandler());
 

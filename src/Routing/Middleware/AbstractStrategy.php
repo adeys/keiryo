@@ -6,12 +6,12 @@
  * Time: 19:13
  */
 
-namespace Simplex\Routing\Middleware;
+namespace Keiryo\Routing\Middleware;
 
 use Psr\Container\ContainerInterface;
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Http\Pipeline;
-use Simplex\Http\RequestHandlerInterface;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Http\Pipeline;
+use Keiryo\Http\RequestHandlerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

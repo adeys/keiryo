@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Database\Exceptions;
+namespace Keiryo\Database\Exceptions;
 
 use PDOException as BasePDOException;
 use Throwable;

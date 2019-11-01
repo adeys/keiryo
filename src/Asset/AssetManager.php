@@ -6,7 +6,7 @@
  * Time: 07:21
  */
 
-namespace Simplex\Asset;
+namespace Keiryo\Asset;
 
 class AssetManager
 {

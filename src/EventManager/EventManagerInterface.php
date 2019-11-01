@@ -6,7 +6,7 @@
  * Time: 14:08
  */
 
-namespace Simplex\EventManager;
+namespace Keiryo\EventManager;
 
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\EventDispatcher\ListenerProviderInterface;

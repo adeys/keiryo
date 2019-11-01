@@ -6,9 +6,9 @@
  * Time: 08:08
  */
 
-namespace Simplex\Pagination;
+namespace Keiryo\Pagination;
 
-use Simplex\Database\Query\Builder;
+use Keiryo\Database\Query\Builder;
 
 class Paginator
 {

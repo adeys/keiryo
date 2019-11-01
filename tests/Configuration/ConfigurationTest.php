@@ -6,10 +6,10 @@
  * Time: 14:03
  */
 
-namespace Simplex\Tests\Configuration;
+namespace Keiryo\Tests\Configuration;
 
 use PHPUnit\Framework\TestCase;
-use Simplex\Configuration\Configuration;
+use Keiryo\Configuration\Configuration;
 
 class ConfigurationTest extends TestCase
 {
@@ -21,7 +21,7 @@ class ConfigurationTest extends TestCase
     public function setUp()
     {
         $this->config = new Configuration([
-            'app' => 'simplex',
+            'app' => 'Keiryo',
             'root' => 'test'
         ]);
 
@@ -31,14 +31,14 @@ class ConfigurationTest extends TestCase
     public function testGet()
     {
         $this->assertEquals('debug', $this->config->get('env'));
-        $this->assertEquals('simplex', $this->config->get('app_name'));
+        $this->assertEquals('Keiryo', $this->config->get('app_name'));
     }
 
     public function testGetNestedValues()
     {
         $this->assertTrue($this->config->has('database'));
         $this->assertEquals('root', $this->config->get('database.user'));
-        $this->assertEquals('simplex.db', $this->config->get('database.name'));
+        $this->assertEquals('Keiryo.db', $this->config->get('database.name'));
     }
 
     public function testSetWithNestedParams()
@@ -67,6 +67,6 @@ class ConfigurationTest extends TestCase
 
         $this->assertEquals('test', $this->config->get('env'));
         $this->assertEquals('john', $this->config->get('database.user'));
-        $this->assertEquals('simplex_admin', $this->config->get('users.john.password'));
+        $this->assertEquals('Keiryo_admin', $this->config->get('users.john.password'));
     }
 }

@@ -7,7 +7,7 @@ declare(strict_types=1);
  * Time: 14:09
  */
 
-namespace Simplex\EventManager;
+namespace Keiryo\EventManager;
 
 use Psr\EventDispatcher\StoppableEventInterface;
 

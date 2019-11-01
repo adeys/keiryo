@@ -1,16 +1,16 @@
 <?php
 
-namespace Simplex\Tests\DataMapper;
+namespace Keiryo\Tests\DataMapper;
 
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
-use Simplex\Database\DatabaseInterface;
-use Simplex\Database\Query\Builder;
-use Simplex\DataMapper\Configuration;
-use Simplex\DataMapper\EntityManager;
-use Simplex\DataMapper\Mapping\EntityMetadata;
-use Simplex\DataMapper\Mapping\MetadataFactory;
-use Simplex\Tests\DataMapper\Fixtures\Entity\User;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Database\Query\Builder;
+use Keiryo\DataMapper\Configuration;
+use Keiryo\DataMapper\EntityManager;
+use Keiryo\DataMapper\Mapping\EntityMetadata;
+use Keiryo\DataMapper\Mapping\MetadataFactory;
+use Keiryo\Tests\DataMapper\Fixtures\Entity\User;
 
 class ConfigurationTest extends TestCase
 {

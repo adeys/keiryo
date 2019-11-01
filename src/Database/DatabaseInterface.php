@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplex\Database;
+namespace Keiryo\Database;
 
 use PDOStatement;
-use Simplex\Database\Driver\DriverInterface;
-use Simplex\Database\Query\Builder;
+use Keiryo\Database\Driver\DriverInterface;
+use Keiryo\Database\Query\Builder;
 
 interface DatabaseInterface
 {

@@ -6,11 +6,11 @@
  * Time: 12:02
  */
 
-namespace Simplex\Strategy;
+namespace Keiryo\Strategy;
 
 use Psr\Container\ContainerInterface;
-use Simplex\Configuration\Configuration;
-use Simplex\Routing\Middleware\AbstractStrategy;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Routing\Middleware\AbstractStrategy;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 

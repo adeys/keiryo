@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplex\Tests\Routing;
+namespace Keiryo\Tests\Routing;
 
 use PHPUnit\Framework\TestCase;
-use Simplex\Routing\Route;
-use Simplex\Routing\SymfonyRouter;
+use Keiryo\Routing\Route;
+use Keiryo\Routing\SymfonyRouter;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
@@ -46,8 +46,8 @@ class SymfonyRouterTest extends TestCase
 
     public function testGenerateRoute()
     {
-        $route = $this->router->generate('hello', ['name' => 'simplex']);
+        $route = $this->router->generate('hello', ['name' => 'Keiryo']);
 
-        $this->assertEquals('/hello/simplex', $route);
+        $this->assertEquals('/hello/Keiryo', $route);
     }
 }

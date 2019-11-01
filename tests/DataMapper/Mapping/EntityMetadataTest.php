@@ -1,12 +1,12 @@
 <?php
 
-namespace Simplex\Tests\DataMapper\Mapping;
+namespace Keiryo\Tests\DataMapper\Mapping;
 
 use PHPUnit\Framework\TestCase;
-use Simplex\DataMapper\Mapping\EntityMetadata;
-use Simplex\DataMapper\Relations\OneToMany;
-use Simplex\DataMapper\Repository\Repository;
-use Simplex\Tests\DataMapper\Fixtures\Entity\User;
+use Keiryo\DataMapper\Mapping\EntityMetadata;
+use Keiryo\DataMapper\Relations\OneToMany;
+use Keiryo\DataMapper\Repository\Repository;
+use Keiryo\Tests\DataMapper\Fixtures\Entity\User;
 
 class EntityMetadataTest extends TestCase
 {

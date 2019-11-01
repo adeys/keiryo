@@ -6,11 +6,11 @@
  * Time: 18:16
  */
 
-namespace Simplex\Queue;
+namespace Keiryo\Queue;
 
-use Simplex\Helper\Str;
-use Simplex\Queue\Contracts\JobInterface;
-use Simplex\Queue\Contracts\QueueInterface;
+use Keiryo\Helper\Str;
+use Keiryo\Queue\Contracts\JobInterface;
+use Keiryo\Queue\Contracts\QueueInterface;
 
 abstract class AbstractQueue implements QueueInterface
 {

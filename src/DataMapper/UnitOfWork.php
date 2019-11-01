@@ -1,6 +1,6 @@
 <?php /** @noinspection PhpInternalEntityUsedInspection */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
 class UnitOfWork
 {

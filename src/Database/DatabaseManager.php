@@ -6,7 +6,7 @@
  * Time: 20:12
  */
 
-namespace Simplex\Database;
+namespace Keiryo\Database;
 
 class DatabaseManager
 {

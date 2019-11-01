@@ -6,7 +6,7 @@
  * Time: 23:26
  */
 
-namespace Simplex\Security\Csrf;
+namespace Keiryo\Security\Csrf;
 
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Twig\Extension\AbstractExtension;

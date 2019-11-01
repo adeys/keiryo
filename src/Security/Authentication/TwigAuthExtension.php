@@ -6,7 +6,7 @@
  * Time: 06:46
  */
 
-namespace Simplex\Security\Authentication;
+namespace Keiryo\Security\Authentication;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;

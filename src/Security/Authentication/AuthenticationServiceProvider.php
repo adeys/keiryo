@@ -6,14 +6,14 @@
  * Time: 04:00
  */
 
-namespace Simplex\Security\Authentication;
+namespace Keiryo\Security\Authentication;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
-use Simplex\Database\DatabaseInterface;
-use Simplex\Http\CookieStorage;
-use Simplex\Security\Authentication\Provider\DatabaseUserProvider;
-use Simplex\Security\Authentication\Provider\UserProviderInterface;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Http\CookieStorage;
+use Keiryo\Security\Authentication\Provider\DatabaseUserProvider;
+use Keiryo\Security\Authentication\Provider\UserProviderInterface;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 class AuthenticationServiceProvider extends AbstractServiceProvider

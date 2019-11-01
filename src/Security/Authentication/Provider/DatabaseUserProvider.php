@@ -6,12 +6,12 @@
  * Time: 02:18
  */
 
-namespace Simplex\Security\Authentication\Provider;
+namespace Keiryo\Security\Authentication\Provider;
 
-use Simplex\Database\DatabaseInterface;
-use Simplex\Database\Query\Builder;
-use Simplex\Security\Authentication\User\User;
-use Simplex\Security\Authentication\User\UserInterface;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Database\Query\Builder;
+use Keiryo\Security\Authentication\User\User;
+use Keiryo\Security\Authentication\User\UserInterface;
 
 class DatabaseUserProvider implements UserProviderInterface
 {

@@ -6,9 +6,9 @@
  * Time: 17:00
  */
 
-namespace Simplex\Queue\Event;
+namespace Keiryo\Queue\Event;
 
-use Simplex\Queue\Contracts\JobInterface;
+use Keiryo\Queue\Contracts\JobInterface;
 
 abstract class AbstractJobEvent
 {

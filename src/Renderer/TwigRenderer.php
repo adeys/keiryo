@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Renderer;
+namespace Keiryo\Renderer;
 
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;

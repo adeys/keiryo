@@ -7,7 +7,7 @@
  * @link      https://github.com/requtize/query-builder
  */
 
-namespace Simplex\Database\Query;
+namespace Keiryo\Database\Query;
 
 use PDO;
 

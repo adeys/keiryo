@@ -6,7 +6,7 @@
  * Time: 20:23
  */
 
-namespace Simplex\Events;
+namespace Keiryo\Events;
 
 use Psr\EventDispatcher\StoppableEventInterface;
 use Symfony\Component\HttpFoundation\Request;

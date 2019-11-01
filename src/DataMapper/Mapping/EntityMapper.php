@@ -1,11 +1,11 @@
 <?php
 
-namespace Simplex\DataMapper\Mapping;
+namespace Keiryo\DataMapper\Mapping;
 
-use Simplex\Database\DatabaseInterface;
-use Simplex\DataMapper\IdentifiableInterface;
-use Simplex\DataMapper\QueryBuilder;
-use Simplex\DataMapper\UnitOfWork;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\DataMapper\IdentifiableInterface;
+use Keiryo\DataMapper\QueryBuilder;
+use Keiryo\DataMapper\UnitOfWork;
 
 abstract class EntityMapper implements EntityMapperInterface
 {
@@ -26,7 +26,7 @@ abstract class EntityMapper implements EntityMapperInterface
     protected $database;
 
     /**
-     * @var \Simplex\DataMapper\QueryBuilder
+     * @var \Keiryo\DataMapper\QueryBuilder
      */
     protected $builder;
 

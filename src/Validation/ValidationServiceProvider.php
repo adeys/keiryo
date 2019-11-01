@@ -6,7 +6,7 @@
  * Time: 16:22
  */
 
-namespace Simplex\Validation;
+namespace Keiryo\Validation;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 

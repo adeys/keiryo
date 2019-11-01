@@ -6,7 +6,7 @@
  * Time: 18:56
  */
 
-namespace Simplex\Helper;
+namespace Keiryo\Helper;
 
 class Str
 {

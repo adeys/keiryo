@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Http;
+namespace Keiryo\Http;
 
 use SplQueue;
 use Symfony\Component\HttpFoundation\Request;

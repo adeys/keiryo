@@ -1,8 +1,8 @@
 <?php
 
-namespace Simplex\DataMapper\Repository;
+namespace Keiryo\DataMapper\Repository;
 
-use Simplex\DataMapper\QueryBuilder;
+use Keiryo\DataMapper\QueryBuilder;
 
 abstract class Repository implements RepositoryInterface
 {

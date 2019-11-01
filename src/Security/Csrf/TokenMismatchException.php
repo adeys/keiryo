@@ -6,7 +6,7 @@
  * Time: 18:28
  */
 
-namespace Simplex\Security\Csrf;
+namespace Keiryo\Security\Csrf;
 
 class TokenMismatchException extends \Exception
 {

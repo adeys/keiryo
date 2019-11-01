@@ -6,9 +6,9 @@
  * Time: 18:35
  */
 
-namespace Simplex\Routing\Extensions;
+namespace Keiryo\Routing\Extensions;
 
-use Simplex\Routing\RouterInterface;
+use Keiryo\Routing\RouterInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 

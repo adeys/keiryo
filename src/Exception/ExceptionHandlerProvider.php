@@ -6,14 +6,14 @@
  * Time: 19:23
  */
 
-namespace Simplex\Exception;
+namespace Keiryo\Exception;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Exception\Event\KernelExceptionEvent;
-use Simplex\Exception\Listener\JsonExceptionListener;
-use Simplex\Exception\Listener\WebExceptionListener;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Exception\Event\KernelExceptionEvent;
+use Keiryo\Exception\Listener\JsonExceptionListener;
+use Keiryo\Exception\Listener\WebExceptionListener;
 
 class ExceptionHandlerProvider extends AbstractServiceProvider implements BootableServiceProviderInterface
 {

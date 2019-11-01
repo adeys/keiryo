@@ -1,11 +1,11 @@
 <?php
 
-namespace Simplex\Renderer;
+namespace Keiryo\Renderer;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Exception\Event\HttpExceptionEvent;
+use Keiryo\Configuration\Configuration;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Exception\Event\HttpExceptionEvent;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;

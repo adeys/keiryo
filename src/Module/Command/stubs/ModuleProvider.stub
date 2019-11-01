@@ -2,7 +2,7 @@
 
 namespace App\{namespace};
 
-use Simplex\Module\AbstractModule;
+use Keiryo\Module\AbstractModule;
 
 class {module} extends AbstractModule
 {

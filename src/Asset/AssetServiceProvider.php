@@ -6,7 +6,7 @@
  * Time: 18:55
  */
 
-namespace Simplex\Asset;
+namespace Keiryo\Asset;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 

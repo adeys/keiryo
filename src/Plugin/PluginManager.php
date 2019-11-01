@@ -6,10 +6,10 @@
  * Time: 16:47
  */
 
-namespace Simplex\Plugin;
+namespace Keiryo\Plugin;
 
 use Psr\Container\ContainerInterface;
-use Simplex\EventManager\EventManagerInterface;
+use Keiryo\EventManager\EventManagerInterface;
 
 class PluginManager
 {

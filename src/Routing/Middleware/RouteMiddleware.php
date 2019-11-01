@@ -1,11 +1,11 @@
 <?php
 
-namespace Simplex\Routing\Middleware;
+namespace Keiryo\Routing\Middleware;
 
 use Psr\Container\ContainerInterface;
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Http\RequestHandlerInterface;
-use Simplex\Routing\RouterInterface;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Http\RequestHandlerInterface;
+use Keiryo\Routing\RouterInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -38,7 +38,7 @@ class RouteMiddleware implements MiddlewareInterface
      */
     public function process(Request $request, RequestHandlerInterface $handler): Response
     {
-        /* @var \Simplex\Routing\Route $route */
+        /* @var \Keiryo\Routing\Route $route */
         $route = $this->router->dispatch($request);
         $request->attributes->set('_route', $route);
 

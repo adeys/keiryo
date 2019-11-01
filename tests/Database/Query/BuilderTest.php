@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplex\Tests\Database\Query;
+namespace Keiryo\Tests\Database\Query;
 
 use PHPUnit\Framework\TestCase;
-use Simplex\Database\DatabaseInterface;
-use Simplex\Database\Query\Builder;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Database\Query\Builder;
 
 class BuilderTest extends TestCase
 {

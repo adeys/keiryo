@@ -6,10 +6,10 @@
  * Time: 12:38
  */
 
-namespace Simplex\Security\Authentication;
+namespace Keiryo\Security\Authentication;
 
-use Simplex\Security\Authentication\Provider\UserProviderInterface;
-use Simplex\Security\Authentication\User\UserInterface;
+use Keiryo\Security\Authentication\Provider\UserProviderInterface;
+use Keiryo\Security\Authentication\User\UserInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 class StatelessAuthenticationManager
@@ -41,7 +41,7 @@ class StatelessAuthenticationManager
      */
     public function authenticate(Request $request): bool
     {
-        $token = $request->headers->get('Authorization', 'simplex');
+        $token = $request->headers->get('Authorization', 'Keiryo');
         $this->user = $this->provider->loadUserByUsername($token);
 
         return (bool)$this->user;

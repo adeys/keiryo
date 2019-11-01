@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Tests\Renderer;
+namespace Keiryo\Tests\Renderer;
 
 use PHPUnit\Framework\TestCase;
-use Simplex\Renderer\TwigRenderer;
+use Keiryo\Renderer\TwigRenderer;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 

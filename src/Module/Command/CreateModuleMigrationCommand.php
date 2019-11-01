@@ -6,10 +6,10 @@
  * Time: 00:08
  */
 
-namespace Simplex\Module\Command;
+namespace Keiryo\Module\Command;
 
 use Phinx\Console\PhinxApplication;
-use Simplex\Module\ModuleLoader;
+use Keiryo\Module\ModuleLoader;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputArgument;

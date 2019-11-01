@@ -6,10 +6,10 @@
  * Time: 00:04
  */
 
-namespace Simplex\DataMapper\Mapping;
+namespace Keiryo\DataMapper\Mapping;
 
-use Simplex\DataMapper\IdentifiableInterface;
-use Simplex\DataMapper\QueryBuilder;
+use Keiryo\DataMapper\IdentifiableInterface;
+use Keiryo\DataMapper\QueryBuilder;
 
 interface EntityMapperInterface
 {

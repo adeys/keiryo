@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplex\Http\Session;
+namespace Keiryo\Http\Session;
 
-use Simplex\Http\CookieStorage;
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Http\RequestHandlerInterface;
+use Keiryo\Http\CookieStorage;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Http\RequestHandlerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;

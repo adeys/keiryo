@@ -1,11 +1,11 @@
 <?php
 
-namespace Simplex\Tests\Http;
+namespace Keiryo\Tests\Http;
 
 use PHPUnit\Framework\TestCase;
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Http\Pipeline;
-use Simplex\Http\RequestHandlerInterface;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Http\Pipeline;
+use Keiryo\Http\RequestHandlerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -24,7 +24,7 @@ class PipelineTest extends TestCase
         $this->pipeline = new Pipeline();
         $this->pipeline
             ->pipe($this->decorate(function (Request $request, $handler) {
-                $request->attributes->set('app', 'simplex');
+                $request->attributes->set('app', 'Keiryo');
                 return $handler->handle($request);
             }));
     }
@@ -72,7 +72,7 @@ class PipelineTest extends TestCase
         $response = $this->pipeline->handle($request);
 
         $this->assertInstanceOf(Response::class, $response);
-        $this->assertContains('simplex', $response->getContent());
+        $this->assertContains('Keiryo', $response->getContent());
     }
 
     public function testPipelineAsMiddleware()
@@ -94,6 +94,6 @@ class PipelineTest extends TestCase
         $response = $this->pipeline->handle($request);
     
         $this->assertInstanceOf(Response::class, $response);
-        $this->assertContains('app: simplex , pipeline: sub-pipe', $response->getContent());
+        $this->assertContains('app: Keiryo , pipeline: sub-pipe', $response->getContent());
     }
 }

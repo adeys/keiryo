@@ -6,9 +6,9 @@
  * Time: 22:40
  */
 
-namespace Simplex\Security\Csrf;
+namespace Keiryo\Security\Csrf;
 
-use Simplex\Helper\Str;
+use Keiryo\Helper\Str;
 use Symfony\Component\HttpFoundation\Request;
 
 class CsrfTokenManager

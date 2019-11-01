@@ -6,7 +6,7 @@
  * Time: 19:05
  */
 
-namespace Simplex\Asset;
+namespace Keiryo\Asset;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;

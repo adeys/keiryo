@@ -6,10 +6,10 @@
  * Time: 23:38
  */
 
-namespace Simplex\Plugin\Command;
+namespace Keiryo\Plugin\Command;
 
-use Simplex\Plugin\PluginInterface;
-use Simplex\Plugin\PluginManager;
+use Keiryo\Plugin\PluginInterface;
+use Keiryo\Plugin\PluginManager;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

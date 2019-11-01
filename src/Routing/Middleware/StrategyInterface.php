@@ -6,9 +6,9 @@
  * Time: 11:23
  */
 
-namespace Simplex\Routing\Middleware;
+namespace Keiryo\Routing\Middleware;
 
-use Simplex\Http\MiddlewareInterface;
+use Keiryo\Http\MiddlewareInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 interface StrategyInterface extends MiddlewareInterface

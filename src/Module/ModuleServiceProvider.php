@@ -6,19 +6,19 @@
  * Time: 12:03
  */
 
-namespace Simplex\Module;
+namespace Keiryo\Module;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Psr\Container\ContainerInterface;
-use Simplex\Configuration\Configuration;
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Events\KernelBootEvent;
-use Simplex\Module\Command\CreateModuleCommand;
-use Simplex\Module\Command\CreateModuleMigrationCommand;
-use Simplex\Module\Command\CreateModuleSeedCommand;
-use Simplex\Module\Command\MigrateModuleCommand;
-use Simplex\Module\Command\ModuleListCommand;
-use Simplex\Module\Command\RunModuleSeedCommand;
+use Keiryo\Configuration\Configuration;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Events\KernelBootEvent;
+use Keiryo\Module\Command\CreateModuleCommand;
+use Keiryo\Module\Command\CreateModuleMigrationCommand;
+use Keiryo\Module\Command\CreateModuleSeedCommand;
+use Keiryo\Module\Command\MigrateModuleCommand;
+use Keiryo\Module\Command\ModuleListCommand;
+use Keiryo\Module\Command\RunModuleSeedCommand;
 
 class ModuleServiceProvider extends AbstractServiceProvider
 {

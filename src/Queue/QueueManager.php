@@ -6,9 +6,9 @@
  * Time: 20:05
  */
 
-namespace Simplex\Queue;
+namespace Keiryo\Queue;
 
-use Simplex\Queue\Contracts\QueueInterface;
+use Keiryo\Queue\Contracts\QueueInterface;
 
 class QueueManager
 {

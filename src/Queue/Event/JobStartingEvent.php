@@ -6,7 +6,7 @@
  * Time: 16:57
  */
 
-namespace Simplex\Queue\Event;
+namespace Keiryo\Queue\Event;
 
 class JobStartingEvent extends AbstractJobEvent
 {

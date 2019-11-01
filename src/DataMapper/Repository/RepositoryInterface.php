@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\DataMapper\Repository;
+namespace Keiryo\DataMapper\Repository;
 
 interface RepositoryInterface
 {

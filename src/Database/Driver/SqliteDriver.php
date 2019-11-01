@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Database\Driver;
+namespace Keiryo\Database\Driver;
 
 use PDO;
 use PDOException;

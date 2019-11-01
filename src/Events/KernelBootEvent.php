@@ -6,9 +6,9 @@
  * Time: 20:34
  */
 
-namespace Simplex\Events;
+namespace Keiryo\Events;
 
-use Simplex\Configuration\Configuration;
+use Keiryo\Configuration\Configuration;
 
 class KernelBootEvent
 {

@@ -6,12 +6,12 @@
  * Time: 18:39
  */
 
-namespace Simplex\Middleware;
+namespace Keiryo\Middleware;
 
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Exception\Event\KernelExceptionEvent;
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Http\RequestHandlerInterface;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Exception\Event\KernelExceptionEvent;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Http\RequestHandlerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

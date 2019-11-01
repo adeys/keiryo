@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Http\Session;
+namespace Keiryo\Http\Session;
 
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 

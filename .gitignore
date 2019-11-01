@@ -1,16 +1,5 @@
-/node_modules
-/public/hot
-/public/storage
-/public/logos/*
-/storage/*.key
 /vendor
 /.idea
 /.vagrant
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
 .env
 composer.lock
-/resources/db/*/*.db
-/resources/cache/*

@@ -6,10 +6,10 @@
  * Time: 23:57
  */
 
-namespace Simplex\DataMapper\Mapping;
+namespace Keiryo\DataMapper\Mapping;
 
-use Simplex\Database\DatabaseInterface;
-use Simplex\DataMapper\UnitOfWork;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\DataMapper\UnitOfWork;
 
 class MapperRegistry
 {

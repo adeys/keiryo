@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Tests\DataMapper\Fixtures\Mapping;
+namespace Keiryo\Tests\DataMapper\Fixtures\Mapping;
 
-use Simplex\DataMapper\Persistence\ArrayPersister;
-use Simplex\Tests\DataMapper\Fixtures\Entity\Comment;
+use Keiryo\DataMapper\Persistence\ArrayPersister;
+use Keiryo\Tests\DataMapper\Fixtures\Entity\Comment;
 
 return [
     Comment::class => [

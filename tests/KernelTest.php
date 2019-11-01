@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Tests;
+namespace Keiryo\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\JsonResponse;

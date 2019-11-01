@@ -6,10 +6,10 @@
  * Time: 12:36
  */
 
-namespace Simplex\Exception\Listener;
+namespace Keiryo\Exception\Listener;
 
-use Simplex\Database\Exceptions\ResourceNotFoundException;
-use Simplex\Exception\Event\KernelExceptionEvent;
+use Keiryo\Database\Exceptions\ResourceNotFoundException;
+use Keiryo\Exception\Event\KernelExceptionEvent;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Exception\MethodNotAllowedException;
 

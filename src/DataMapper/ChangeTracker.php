@@ -6,7 +6,7 @@
  * Time: 02:36
  */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
 class ChangeTracker
 {

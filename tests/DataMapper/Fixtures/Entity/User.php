@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Tests\DataMapper\Fixtures\Entity;
+namespace Keiryo\Tests\DataMapper\Fixtures\Entity;
 
 class User
 {

@@ -6,9 +6,9 @@
  * Time: 19:26
  */
 
-namespace Simplex\Security\Authentication\Authorization;
+namespace Keiryo\Security\Authentication\Authorization;
 
-use Simplex\Security\Authentication\AuthenticationManager;
+use Keiryo\Security\Authentication\AuthenticationManager;
 
 class AuthorizationManager
 {

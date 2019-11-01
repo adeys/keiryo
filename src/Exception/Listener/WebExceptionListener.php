@@ -6,15 +6,15 @@
  * Time: 18:14
  */
 
-namespace Simplex\Exception\Listener;
+namespace Keiryo\Exception\Listener;
 
-use Simplex\Database\Exceptions\ResourceNotFoundException as DatabaseResourceNotFoundException;
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Exception\Event\HttpExceptionEvent;
-use Simplex\Exception\Event\KernelExceptionEvent;
-use Simplex\Security\Authentication\Authorization\AuthorizationException;
-use Simplex\Security\Authentication\Authorization\AuthorizationManager;
-use Simplex\Security\Csrf\TokenMismatchException;
+use Keiryo\Database\Exceptions\ResourceNotFoundException as DatabaseResourceNotFoundException;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Exception\Event\HttpExceptionEvent;
+use Keiryo\Exception\Event\KernelExceptionEvent;
+use Keiryo\Security\Authentication\Authorization\AuthorizationException;
+use Keiryo\Security\Authentication\Authorization\AuthorizationManager;
+use Keiryo\Security\Csrf\TokenMismatchException;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Exception\MethodNotAllowedException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;

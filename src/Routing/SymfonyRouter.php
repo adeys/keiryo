@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Routing;
+namespace Keiryo\Routing;
 
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Routing\Middleware\StrategyInterface;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Routing\Middleware\StrategyInterface;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\MethodNotAllowedException;

@@ -6,14 +6,14 @@
  * Time: 21:47
  */
 
-namespace Simplex\Queue;
+namespace Keiryo\Queue;
 
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Queue\Contracts\JobInterface;
-use Simplex\Queue\Contracts\QueueInterface;
-use Simplex\Queue\Event\JobFailedEvent;
-use Simplex\Queue\Event\JobStartingEvent;
-use Simplex\Queue\Event\JobSuccessEvent;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Queue\Contracts\JobInterface;
+use Keiryo\Queue\Contracts\QueueInterface;
+use Keiryo\Queue\Event\JobFailedEvent;
+use Keiryo\Queue\Event\JobStartingEvent;
+use Keiryo\Queue\Event\JobSuccessEvent;
 
 class Worker
 {

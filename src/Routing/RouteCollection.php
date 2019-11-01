@@ -6,7 +6,7 @@
  * Time: 00:31
  */
 
-namespace Simplex\Routing;
+namespace Keiryo\Routing;
 
 use Symfony\Component\Routing\RouteCollectionBuilder;
 

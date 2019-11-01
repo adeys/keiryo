@@ -6,7 +6,7 @@
  * Time: 12:01
  */
 
-namespace Simplex\Http;
+namespace Keiryo\Http;
 
 use Symfony\Component\HttpFoundation\Cookie;
 

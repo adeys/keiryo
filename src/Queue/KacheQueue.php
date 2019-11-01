@@ -6,10 +6,10 @@
  * Time: 16:38
  */
 
-namespace Simplex\Queue;
+namespace Keiryo\Queue;
 
 use Kached\Kache;
-use Simplex\Queue\Contracts\JobInterface;
+use Keiryo\Queue\Contracts\JobInterface;
 
 class KacheQueue extends AbstractQueue
 {

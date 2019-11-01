@@ -6,9 +6,9 @@
  * Time: 08:40
  */
 
-namespace Simplex\Module\Command;
+namespace Keiryo\Module\Command;
 
-use Simplex\Configuration\Configuration;
+use Keiryo\Configuration\Configuration;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -53,7 +53,7 @@ class CreateModuleCommand extends Command
         $name = sprintf('%sModule', $input->getArgument('name'));
         $base = $this->configuration->get('root');
 
-        $paths = ['', 'views', 'Actions', 'resources'];
+        $paths = ['', 'views', 'Controller', 'resources'];
         $base = sprintf('%s/app/%s', $base, $name);
         foreach ($paths as $path) {
             mkdir(sprintf('%s/%s', $base, $path));

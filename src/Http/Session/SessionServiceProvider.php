@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Http\Session;
+namespace Keiryo\Http\Session;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
+use Keiryo\Configuration\Configuration;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBag;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
@@ -26,11 +26,11 @@ class SessionServiceProvider extends AbstractServiceProvider
     public function register()
     {
         $host = $this->container->get(Configuration::class)->get('app_host', 'localhost');
-        $flashBag = new FlashBag('_simplex_flashes');
+        $flashBag = new FlashBag('_Keiryo_flashes');
         $storage = new NativeSessionStorage(['cookie_domain' => ".$host"]);
 
         $session = new Session($storage, null, $flashBag);
-        $session->setName('_simplex');
+        $session->setName('_Keiryo');
 
         $this->container->add(FlashBagInterface::class, $flashBag);
         $this->container->add(SessionInterface::class, $session);

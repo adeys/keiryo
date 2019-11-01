@@ -1,11 +1,11 @@
 <?php
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
-use Simplex\Database\DatabaseInterface;
-use Simplex\DataMapper\Mapping\EntityMapper;
-use Simplex\DataMapper\Mapping\EntityMapperInterface;
-use Simplex\DataMapper\Mapping\MapperRegistry;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\DataMapper\Mapping\EntityMapper;
+use Keiryo\DataMapper\Mapping\EntityMapperInterface;
+use Keiryo\DataMapper\Mapping\MapperRegistry;
 
 class EntityManager
 {

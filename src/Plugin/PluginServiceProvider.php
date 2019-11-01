@@ -6,13 +6,13 @@
  * Time: 19:44
  */
 
-namespace Simplex\Plugin;
+namespace Keiryo\Plugin;
 
 use Composer\Autoload\ClassLoader;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use Psr\Container\ContainerInterface;
-use Simplex\EventManager\EventManagerInterface;
-use Simplex\Events\KernelBootEvent;
+use Keiryo\EventManager\EventManagerInterface;
+use Keiryo\Events\KernelBootEvent;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Yaml\Yaml;
 

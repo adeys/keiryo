@@ -6,7 +6,7 @@
  * Time: 17:21
  */
 
-namespace Simplex\Validation;
+namespace Keiryo\Validation;
 
 use Rakit\Validation\ErrorBag;
 use Throwable;

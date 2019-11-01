@@ -6,11 +6,11 @@
  * Time: 22:39
  */
 
-namespace Simplex\Security\Authentication;
+namespace Keiryo\Security\Authentication;
 
-use Simplex\Http\CookieStorage;
-use Simplex\Security\Authentication\Provider\UserProviderInterface;
-use Simplex\Security\Authentication\User\UserInterface;
+use Keiryo\Http\CookieStorage;
+use Keiryo\Security\Authentication\Provider\UserProviderInterface;
+use Keiryo\Security\Authentication\User\UserInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
@@ -55,7 +55,7 @@ class AuthenticationManager
         $this->provider = $provider;
         $this->session = $session;
         $this->cookies = $cookies;
-        $this->cookieKey = 'simplex_remember';
+        $this->cookieKey = 'Keiryo_remember';
     }
 
     /**

@@ -1,0 +1,23 @@
+{
+    "name": "keiryo/renderer",
+    "description": "Keiryo Rendere component",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "K. Raphael",
+            "email": "raphalogou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "ext-json": "*",
+        "twig/twig": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keiryo\\Renderer\\": ""
+        }
+    }
+}

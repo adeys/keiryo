@@ -6,11 +6,11 @@
  * Time: 08:42
  */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
-use Simplex\Database\DatabaseInterface;
-use Simplex\Database\Query\Builder;
-use Simplex\DataMapper\Mapping\EntityMapperInterface;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Database\Query\Builder;
+use Keiryo\DataMapper\Mapping\EntityMapperInterface;
 
 class QueryBuilder extends Builder
 {

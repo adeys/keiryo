@@ -1,11 +1,11 @@
 <?php
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
-use Simplex\Database\DatabaseManager;
-use Simplex\DataMapper\Mapping\MappingRegistry;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Database\DatabaseManager;
+use Keiryo\DataMapper\Mapping\MappingRegistry;
 
 class DataMapperServiceProvider extends AbstractServiceProvider
 {

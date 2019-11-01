@@ -7,10 +7,10 @@
  * @link      https://github.com/requtize/query-builder
  */
 
-namespace Simplex\Database\Query;
+namespace Keiryo\Database\Query;
 
-use Simplex\Database\DatabaseInterface;
-use Simplex\Database\Query\Exception\Exception;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Database\Query\Exception\Exception;
 
 class Compiler
 {

@@ -6,11 +6,11 @@
  * Time: 21:00
  */
 
-namespace Simplex\DataMapper;
+namespace Keiryo\DataMapper;
 
-use Simplex\Database\DatabaseManager;
-use Simplex\DataMapper\Mapping\EntityMapperInterface;
-use Simplex\DataMapper\Mapping\MappingRegistry;
+use Keiryo\Database\DatabaseManager;
+use Keiryo\DataMapper\Mapping\EntityMapperInterface;
+use Keiryo\DataMapper\Mapping\MappingRegistry;
 
 class DataMapper
 {

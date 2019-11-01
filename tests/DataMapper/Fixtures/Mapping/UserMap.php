@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Tests\DataMapper\Fixtures\Mapping;
+namespace Keiryo\Tests\DataMapper\Fixtures\Mapping;
 
-use Simplex\DataMapper\Persistence\ArrayPersister;
-use Simplex\Tests\DataMapper\Fixtures\Entity\User;
+use Keiryo\DataMapper\Persistence\ArrayPersister;
+use Keiryo\Tests\DataMapper\Fixtures\Entity\User;
 
 return [
     User::class => [

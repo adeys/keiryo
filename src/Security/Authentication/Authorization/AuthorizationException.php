@@ -6,7 +6,7 @@
  * Time: 19:32
  */
 
-namespace Simplex\Security\Authentication\Authorization;
+namespace Keiryo\Security\Authentication\Authorization;
 
 use Throwable;
 

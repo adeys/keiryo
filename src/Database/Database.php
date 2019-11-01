@@ -1,12 +1,12 @@
 <?php
 
-namespace Simplex\Database;
+namespace Keiryo\Database;
 
 use PDO;
 use PDOException;
 use PDOStatement;
-use Simplex\Database\Driver\DriverInterface;
-use Simplex\Database\Query\Builder;
+use Keiryo\Database\Driver\DriverInterface;
+use Keiryo\Database\Query\Builder;
 
 class Database implements DatabaseInterface
 {

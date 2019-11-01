@@ -6,11 +6,11 @@
  * @copyright Copyright (c) 2017, Adam Banaszkiewicz
  * @link      https://github.com/requtize/query-builder
  */
-namespace Simplex\Database\Query;
+namespace Keiryo\Database\Query;
 
 use PDO;
-use Simplex\Database\DatabaseInterface;
-use Simplex\Database\Query\Exception\QueryExecutionFailException;
+use Keiryo\Database\DatabaseInterface;
+use Keiryo\Database\Query\Exception\QueryExecutionFailException;
 
 class Builder
 {
@@ -131,7 +131,7 @@ class Builder
     }
 
     /**
-     * @param DatabaseInterface|null $connection
+     * @param string|null $alias
      * @return Builder
      */
     public function newQuery(?string $alias = null)

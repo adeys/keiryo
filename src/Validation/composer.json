@@ -1,0 +1,22 @@
+{
+    "name": "keiryo/validation",
+    "description": "Keiryo Validation component (Simple wrapper around rakit/validation)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "K. Raphael",
+            "email": "raphalogou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "rakit/validation": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keiryo\\Validation\\": "src/"
+        }
+    }
+}

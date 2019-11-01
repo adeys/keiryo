@@ -6,10 +6,10 @@
  * Time: 03:39
  */
 
-namespace Simplex\Module\Command;
+namespace Keiryo\Module\Command;
 
-use Simplex\Module\ModuleInterface;
-use Simplex\Module\ModuleLoader;
+use Keiryo\Module\ModuleInterface;
+use Keiryo\Module\ModuleLoader;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

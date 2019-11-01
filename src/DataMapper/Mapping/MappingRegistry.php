@@ -6,7 +6,7 @@
  * Time: 19:15
  */
 
-namespace Simplex\DataMapper\Mapping;
+namespace Keiryo\DataMapper\Mapping;
 
 class MappingRegistry
 {

@@ -7,7 +7,7 @@
  * @link      https://github.com/requtize/query-builder
  */
 
-namespace Simplex\Database\Query\Exception;
+namespace Keiryo\Database\Query\Exception;
 
 class QueryExecutionFailException extends Exception
 {

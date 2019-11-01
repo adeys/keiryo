@@ -1,0 +1,28 @@
+{
+    "name": "keiryo/module-manager",
+    "description": "Keiryo Module Manager component",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "K. Raphael",
+            "email": "raphalogou@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2.0",
+        "psr/container": "^1.0",
+        "keiryo/event-manager": "*"
+    },
+    "suggest": {
+        "keiryo/data-mapper": "To configure data mapping for modules",
+        "keiryo/renderer": "Useful to integrate module with rendering engine",
+        "keiryo/routing": "Makes module routing configuration easy"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keiryo\\Module\\": ""
+        }
+    }
+}

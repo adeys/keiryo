@@ -1,10 +1,10 @@
 <?php
 
-namespace Simplex\Database;
+namespace Keiryo\Database;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
-use Simplex\Database\Configuration as DatabaseConfiguration;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Database\Configuration as DatabaseConfiguration;
 
 class DatabaseServiceProvider extends AbstractServiceProvider
 {

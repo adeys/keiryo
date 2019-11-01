@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplex\Database\Exceptions;
+namespace Keiryo\Database\Exceptions;
 
 /**
  * Common interface for all the exceptions of this package.

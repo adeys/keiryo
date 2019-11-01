@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Routing;
+namespace Keiryo\Routing;
 
-use Simplex\Http\MiddlewareInterface;
-use Simplex\Routing\Middleware\StrategyInterface;
+use Keiryo\Http\MiddlewareInterface;
+use Keiryo\Routing\Middleware\StrategyInterface;
 
 class Route
 {

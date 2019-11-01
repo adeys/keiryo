@@ -1,9 +1,9 @@
 <?php
 
-namespace Simplex\Routing;
+namespace Keiryo\Routing;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
-use Simplex\Configuration\Configuration;
+use Keiryo\Configuration\Configuration;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Routing\Loader\YamlFileLoader;
 
@@ -36,7 +36,7 @@ class RoutingServiceProvider extends AbstractServiceProvider
         }
         $router->setStrategy('web');
 
-        $router->get('/', 'Simplex\Routing\RoutingServiceProvider:default', 'simplex_home');
+        $router->get('/', 'Keiryo\Routing\RoutingServiceProvider:default', 'home');
 
         $this->container->add(RouterInterface::class, $router);
     }
@@ -45,7 +45,7 @@ class RoutingServiceProvider extends AbstractServiceProvider
     {
         return <<<HTML
 <div style='text-align: center; font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: x-large'>
-    <h1>Welcome to Simplex default home</h1>
+    <h1>Welcome to Keiryo default home</h1>
 </div>
 HTML;
     }

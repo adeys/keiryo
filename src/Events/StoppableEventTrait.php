@@ -6,7 +6,7 @@
  * Time: 20:24
  */
 
-namespace Simplex\Events;
+namespace Keiryo\Events;
 
 trait StoppableEventTrait
 {

@@ -6,7 +6,7 @@
  * @author K. Raphael <raphalogou@gmail.com>
  */
 
-namespace Simplex\Http;
+namespace Keiryo\Http;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

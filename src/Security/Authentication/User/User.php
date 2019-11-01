@@ -6,7 +6,7 @@
  * Time: 02:26
  */
 
-namespace Simplex\Security\Authentication\User;
+namespace Keiryo\Security\Authentication\User;
 
 class User implements UserInterface
 {

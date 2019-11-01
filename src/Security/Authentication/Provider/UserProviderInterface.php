@@ -6,9 +6,9 @@
  * Time: 02:19
  */
 
-namespace Simplex\Security\Authentication\Provider;
+namespace Keiryo\Security\Authentication\Provider;
 
-use Simplex\Security\Authentication\User\UserInterface;
+use Keiryo\Security\Authentication\User\UserInterface;
 
 interface UserProviderInterface
 {

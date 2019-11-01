@@ -6,11 +6,11 @@
  * Time: 19:26
  */
 
-namespace Simplex\Strategy;
+namespace Keiryo\Strategy;
 
 use Psr\Container\ContainerInterface;
-use Simplex\Configuration\Configuration;
-use Simplex\Routing\Middleware\AbstractStrategy;
+use Keiryo\Configuration\Configuration;
+use Keiryo\Routing\Middleware\AbstractStrategy;
 use Symfony\Component\HttpFoundation\Response;
 
 class WebStrategy extends AbstractStrategy
