@@ -1,14 +1,13 @@
 <?php
 
-namespace Keiryo\Renderer;
+namespace Keiryo\Renderer\Twig;
 
+use Keiryo\Renderer\RendererInterface;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
-class TwigRenderer
+class TwigRenderer implements RendererInterface
 {
-
-    const NAMESPACE = '__main__';
 
     /**
      * Twig environment
@@ -44,7 +43,7 @@ class TwigRenderer
      * @return void
      * @throws \Twig_Error_Loader
      */
-    public function addPath(string $path, $namespace = self::NAMESPACE)
+    public function addPath(string $path, string $namespace = self::DEFAULT): void
     {
         $this->loader->addPath($path, $namespace);
     }
@@ -70,5 +69,14 @@ class TwigRenderer
     public function getEnv(): Environment
     {
         return $this->twig;
+    }
+
+    /**
+     * @param string $name
+     * @param $value
+     */
+    public function addGlobal(string $name, $value): void
+    {
+        $this->twig->addGlobal($name, $value);
     }
 }

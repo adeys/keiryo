@@ -1,11 +1,12 @@
 <?php
 
-namespace Keiryo\Renderer;
+namespace Keiryo\Renderer\Twig;
 
-use League\Container\ServiceProvider\AbstractServiceProvider;
-use Keiryo\Configuration\Configuration;
 use Keiryo\EventManager\EventManagerInterface;
-use Keiryo\Exception\Event\HttpExceptionEvent;
+use Keiryo\Renderer\RendererInterface;
+use League\Container\ServiceProvider\AbstractServiceProvider;
+use Simplex\Configuration\Configuration;
+use Simplex\Exception\Event\HttpExceptionEvent;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
@@ -17,6 +18,7 @@ class TwigServiceProvider extends AbstractServiceProvider
      * {@inheritDoc}
      */
     protected $provides = [
+        RendererInterface::class,
         TwigRenderer::class
     ];
 
@@ -44,6 +46,8 @@ class TwigServiceProvider extends AbstractServiceProvider
                 return new TwigRenderer($twig, $loader);
             }
         );
+
+        $this->getContainer()->add(RendererInterface::class, $this->getContainer()->get(TwigRenderer::class));
 
         $this->container->get(EventManagerInterface::class)
             ->on(HttpExceptionEvent::class, function (HttpExceptionEvent $event) {

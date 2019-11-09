@@ -31,14 +31,17 @@ class KacheQueue extends AbstractQueue
     /**
      * Push a job onto the queue
      *
-     * @param JobInterface|string $job
+     * @param JobInterface $job
      * @param string $queue
+     * @throws \Exception
      */
-    public function push($job, string $queue = 'default')
+    public function push(JobInterface $job, string $queue = 'default')
     {
         $job = json_encode($this->createPayload($job, $queue));
 
-        $response = $this->kache->getConnection()->sendCommand('qadd', $job);
+        $response = $this->kache
+            ->getConnection()
+            ->sendCommand('qadd', $job);
         $this->kache->format($response);
     }
 
@@ -48,8 +51,9 @@ class KacheQueue extends AbstractQueue
      * @param int $delay
      * @param JobInterface|string $job
      * @param string $queue
+     * @throws \Exception
      */
-    public function later(int $delay, $job, string $queue = 'default')
+    public function later(int $delay, JobInterface $job, string $queue = 'default')
     {
         $job = json_encode(
             array_merge(
@@ -58,7 +62,9 @@ class KacheQueue extends AbstractQueue
             )
         );
 
-        $response = $this->kache->getConnection()->sendCommand('qadd', $job);
+        $response = $this->kache
+            ->getConnection()
+            ->sendCommand('qadd', $job);
         $this->kache->format($response);
     }
 
@@ -70,19 +76,20 @@ class KacheQueue extends AbstractQueue
      */
     public function pop(string $queue = 'default'): ?JobInterface
     {
-        $response = $this->kache->getConnection()->sendCommand('qpop', $queue);
+        $response = $this->kache
+            ->getConnection()
+            ->sendCommand('qpop', $queue);
         $payload = $this->kache->format($response);
 
         if ($payload) {
             $data = $payload['job'];
-            if (!class_exists($data['class'])) {
-                return null;
-            }
-            /** @var JobInterface $job */
-            $job = unserialize($data['body']);
-            $job->setId($payload['id']);
+            if (class_exists($data['class'])) {
+                /** @var JobInterface $job */
+                $job = unserialize($data['body']);
+                $job->setId($payload['id']);
 
-            return $job;
+                return $job;
+            }
         }
 
         return null;
@@ -96,7 +103,9 @@ class KacheQueue extends AbstractQueue
      */
     public function delete(int $id, string $queue)
     {
-        $response = $this->kache->getConnection()->sendCommand('qdel', sprintf('%s %d', $queue, $id));
+        $response = $this->kache
+            ->getConnection()
+            ->sendCommand('qdel', sprintf('%s %d', $queue, $id));
         $this->kache->format($response);
     }
 }

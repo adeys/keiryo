@@ -27,6 +27,7 @@ class CsrfTokenManager
      * @var int
      */
     private $entropy;
+
     /**
      * @var string
      */

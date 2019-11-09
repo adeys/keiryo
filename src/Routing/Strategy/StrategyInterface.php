@@ -6,7 +6,7 @@
  * Time: 11:23
  */
 
-namespace Keiryo\Routing\Middleware;
+namespace Keiryo\Routing\Strategy;
 
 use Keiryo\Http\MiddlewareInterface;
 use Symfony\Component\HttpFoundation\Response;

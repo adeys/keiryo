@@ -18,19 +18,19 @@ abstract class AbstractQueue implements QueueInterface
     /**
      * Creates array payload to submit
      *
-     * @param $job
+     * @param JobInterface $job
      * @param string $queue
      * @return array
      * @throws \Exception
      */
-    protected function createPayload($job, string $queue): array
+    protected function createPayload(JobInterface $job, string $queue): array
     {
         return [
             'id' => $this->getId(),
             'queue' => $queue,
             'job' => [
                 'class' => get_class($job),
-                'body' => $job instanceof JobInterface ? $job = serialize($job) : $job
+                'body' => serialize($job)
             ]
         ];
     }
