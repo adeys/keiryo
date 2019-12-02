@@ -8,7 +8,7 @@
 
 namespace Keiryo\Module\Command;
 
-use Keiryo\Configuration\Configuration;
+use Simplex\Configuration\Configuration;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
