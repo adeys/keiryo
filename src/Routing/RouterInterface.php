@@ -54,14 +54,6 @@ interface RouterInterface
     public function generate(string $name, array $parameters = []): string;
 
     /**
-     * Add route specific middlewares to router
-     *
-     * @param MiddlewareInterface $middleware
-     * @return void
-     */
-    /*public function middleware(MiddlewareInterface $middleware);*/
-
-    /**
      * Set middleware group
      *
      * @param string $strategy
