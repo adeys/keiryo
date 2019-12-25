@@ -48,4 +48,33 @@ class ProstgreDriver extends AbstractDriver
         } catch (PDOException $e) {
             throw $e;
         }
-    }}
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function quoteTableName(string $table): string
+    {
+        return $table == '*'
+            ? $table
+            : '"' . $table . '"';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function quoteColumnName(string $column): string
+    {
+        return $column == '*'
+            ? $column
+            : '"' . $column . '"';
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function quoteSingle($value)
+    {
+        return is_int($value) ? $value : '"' . $value . '"';
+    }
+}

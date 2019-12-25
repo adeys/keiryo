@@ -269,9 +269,9 @@ class Compiler
      */
     public function quoteTableName(string $name): string
     {
-        return $name == '*'
-            ? $name
-            : '`' . $name . '`';
+        return $this->connection
+            ->getDriver()
+            ->quoteTableName($name);
     }
 
     /**
@@ -280,9 +280,9 @@ class Compiler
      */
     public function quoteColumnName(string $name): string
     {
-        return $name == '*'
-            ? $name
-            : '`' . $name . '`';
+        return $this->connection
+            ->getDriver()
+            ->quoteColumnName($name);
     }
 
     /**
@@ -316,7 +316,9 @@ class Compiler
      */
     public function quoteSingle($value)
     {
-        return is_int($value) ? $value : '`' . $value . '`';
+        return $this->connection
+            ->getDriver()
+            ->quoteSingle($value);
     }
 
     /**
