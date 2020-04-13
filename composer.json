@@ -9,7 +9,7 @@
     },
     "require-dev": {
       "league/container": "^3",
-      "symfony/http-foundation": "^4.0",
+      "symfony/http-foundation": "4.4.*",
       "robmorgan/phinx": "^0.9",
       "tracy/tracy": "^2.5",
       "fzaninotto/faker": "^1.7",
