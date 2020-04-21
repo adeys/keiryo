@@ -6,7 +6,7 @@
  * Time: 13:35
  */
 
-namespace Keiryo\Renderer;
+namespace Keiryo\Renderer\Twig;
 
 use Twig\Environment;
 use Twig\Extension\AbstractExtension;
@@ -70,10 +70,6 @@ HTML;
      * @param Environment $env
      * @param array $context
      * @param string $name
-     * @return false|string
-     * @throws \Throwable
-     * @throws \Twig_Error_Loader
-     * @throws \Twig_Error_Syntax
      */
     public function error(Environment $env, array $context, string $name)
     {

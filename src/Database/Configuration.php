@@ -3,6 +3,7 @@
 namespace Keiryo\Database;
 
 use Keiryo\Database\Driver\DriverInterface;
+use Keiryo\Database\Driver\ProstgreDriver;
 use Keiryo\Database\Driver\SqliteDriver;
 
 class Configuration
@@ -24,7 +25,8 @@ class Configuration
      * @var array
      */
     protected $drivers = [
-        'sqlite' => SqliteDriver::class
+        'sqlite' => SqliteDriver::class,
+        'prostgre' => ProstgreDriver::class
     ];
 
     public function __construct(array $options)

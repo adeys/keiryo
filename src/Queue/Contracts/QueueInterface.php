@@ -14,19 +14,19 @@ interface QueueInterface
     /**
      * Push a job onto the queue
      *
-     * @param JobInterface|string $job
+     * @param JobInterface $job
      * @param string $queue
      */
-    public function push($job, string $queue);
+    public function push(JobInterface $job, string $queue);
 
     /**
      * Push a job onto the queue and makes it available after "$delay" milliseconds
      *
      * @param int $delay
-     * @param JobInterface|string $job
+     * @param JobInterface $job
      * @param string $queue
      */
-    public function later(int $delay, $job, string $queue);
+    public function later(int $delay, JobInterface $job, string $queue);
 
     /**
      * Gets the next available job from the queue

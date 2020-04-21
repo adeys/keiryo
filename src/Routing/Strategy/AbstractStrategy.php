@@ -6,12 +6,12 @@
  * Time: 19:13
  */
 
-namespace Keiryo\Routing\Middleware;
+namespace Keiryo\Routing\Strategy;
 
-use Psr\Container\ContainerInterface;
 use Keiryo\Http\MiddlewareInterface;
 use Keiryo\Http\Pipeline;
 use Keiryo\Http\RequestHandlerInterface;
+use Psr\Container\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -54,6 +54,7 @@ abstract class AbstractStrategy implements StrategyInterface
             } elseif (is_object($middleware) && $middleware instanceof MiddlewareInterface) {
                 return $middleware;
             }
+            return null;
         });
 
         return $this->pipeline->process($request, $handler);

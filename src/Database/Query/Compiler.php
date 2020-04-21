@@ -214,6 +214,7 @@ class Compiler
                 }
             } elseif ($value instanceof Raw) {
                 $criteria .= $segment['joiner'] . ' ' . $key . ' ' . $segment['operator'] . ' ' . $value . ' ';
+                $bindings = array_merge($bindings, $value->getBindings());
             } else {
                 if (!$bindValues) {
                     $value = is_null($value) ? $value : $this->quote($value);
@@ -269,9 +270,9 @@ class Compiler
      */
     public function quoteTableName(string $name): string
     {
-        return $name == '*'
-            ? $name
-            : '`' . $name . '`';
+        return $this->connection
+            ->getDriver()
+            ->quoteTableName($name);
     }
 
     /**
@@ -280,9 +281,9 @@ class Compiler
      */
     public function quoteColumnName(string $name): string
     {
-        return $name == '*'
-            ? $name
-            : '`' . $name . '`';
+        return $this->connection
+            ->getDriver()
+            ->quoteColumnName($name);
     }
 
     /**
@@ -316,7 +317,9 @@ class Compiler
      */
     public function quoteSingle($value)
     {
-        return is_int($value) ? $value : '`' . $value . '`';
+        return $this->connection
+            ->getDriver()
+            ->quoteSingle($value);
     }
 
     /**

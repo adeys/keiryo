@@ -913,7 +913,7 @@ class Builder
                 ];
             }
         } else {
-            if ($key && $operator && !$value) {
+            if ($key && $operator && is_null($value)) {
                 $value = $operator;
                 $operator = '=';
             }

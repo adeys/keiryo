@@ -12,7 +12,7 @@ use Keiryo\Security\Authentication\Provider\UserProviderInterface;
 use Keiryo\Security\Authentication\User\UserInterface;
 use Symfony\Component\HttpFoundation\Request;
 
-class StatelessAuthenticationManager
+class StatelessAuthenticationManager implements AuthenticationManagerInterface
 {
     /**
      * @var UserInterface

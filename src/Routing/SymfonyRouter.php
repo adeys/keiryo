@@ -3,7 +3,7 @@
 namespace Keiryo\Routing;
 
 use Keiryo\Http\MiddlewareInterface;
-use Keiryo\Routing\Middleware\StrategyInterface;
+use Keiryo\Routing\Strategy\StrategyInterface;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Exception\MethodNotAllowedException;

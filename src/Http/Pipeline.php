@@ -43,7 +43,8 @@ class Pipeline implements RequestHandlerInterface, MiddlewareInterface
         }
 
         $middleware = $this->stack->dequeue();
-        return $middleware->process($request, $this);
+        $handler = clone $this;
+        return $middleware->process($request, $handler);
     }
 
     /**

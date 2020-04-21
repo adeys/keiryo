@@ -1,11 +1,13 @@
 <?php
 
+
 namespace Keiryo\Database\Driver;
+
 
 use PDO;
 use PDOException;
 
-class SqliteDriver extends AbstractDriver
+class ProstgreDriver extends AbstractDriver
 {
     /**
      * @var array
@@ -33,8 +35,15 @@ class SqliteDriver extends AbstractDriver
     public function connect()
     {
         try {
-            $path = $this->options['database'];
-            $dsn = "sqlite:$path";
+            $db = parse_url(getenv("DATABASE_URL"));
+            $dsn = "pgsql:" . sprintf(
+                    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+                    $db["host"],
+                    $db["port"],
+                    $db["user"],
+                    $db["pass"],
+                    ltrim($db["path"], "/")
+                );
             $this->pdo = new PDO($dsn);
         } catch (PDOException $e) {
             throw $e;
@@ -48,7 +57,7 @@ class SqliteDriver extends AbstractDriver
     {
         return $table == '*'
             ? $table
-            : '`' . $table . '`';
+            : '"' . $table . '"';
     }
 
     /**
@@ -58,7 +67,7 @@ class SqliteDriver extends AbstractDriver
     {
         return $column == '*'
             ? $column
-            : '`' . $column . '`';
+            : '"' . $column . '"';
     }
 
     /**
@@ -66,6 +75,6 @@ class SqliteDriver extends AbstractDriver
      */
     public function quoteSingle($value)
     {
-        return is_int($value) ? $value : '`' . $value . '`';
+        return is_int($value) ? $value : '"' . $value . '"';
     }
 }

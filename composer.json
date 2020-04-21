@@ -4,16 +4,26 @@
     "type": "library",
     "license": "MIT",
     "require": {
-      "php": ">=7.2.0",
-      "ext-json": "*"
+		"php": ">=7.2.0",
+		"ext-json": "*",
+		"psr/event-dispatcher": "^1.0.0",
+		"rakit/validation": "^1.0.0",
+		"symfony/config": "4.4.*",
+		"symfony/console": "4.4.*",
+		"symfony/finder": "4.4.*",
+		"symfony/http-foundation": "4.4.*",
+		"symfony/routing": "4.4.*",
+		"symfony/yaml": "4.4.*",
+		"twig/twig": "3.*"
+
     },
     "require-dev": {
-      "league/container": "^3",
+      "league/container": "3.*",
       "symfony/http-foundation": "4.4.*",
-      "robmorgan/phinx": "^0.9",
-      "tracy/tracy": "^2.5",
-      "fzaninotto/faker": "^1.7",
-      "squizlabs/php_codesniffer": "^3.2"
+	  "robmorgan/phinx": "0.*",
+      "tracy/tracy": "2.*",
+      "fzaninotto/faker": "1.*",
+      "squizlabs/php_codesniffer": "3.*"
     },
     "autoload": {
         "psr-4": {

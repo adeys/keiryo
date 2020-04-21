@@ -15,15 +15,18 @@ class AssetManager
      * @var string[]
      */
     private $paths = [];
+    /**
+     * @var string
+     */
+    private $basePath;
 
     /**
      * AssetManager constructor.
-     * @param string $path
-     * @param string $prefix
+     * @param string $basePath
      */
-    public function __construct(string $path, string $prefix = 'default')
+    public function __construct(string $basePath = '/')
     {
-        $this->register($path, $prefix);
+        $this->basePath = rtrim($basePath, '/');
     }
 
     /**
@@ -43,13 +46,14 @@ class AssetManager
      */
     public function getUrl(string $asset, ?string $type)
     {
-        $type = $type ?? 'default';
         if (!isset($this->paths[$type])) {
             throw new \Exception(sprintf('Package %s has not been registered', $type));
         }
 
-        return $type
+        $url = $type
             ? sprintf('/%s/%s', ltrim($this->paths[$type], '/'), ltrim($asset, '/'))
             : sprintf('/%s', ltrim($asset, '/'));
+
+        return $this->basePath . $url;
     }
 }
