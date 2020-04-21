@@ -214,6 +214,7 @@ class Compiler
                 }
             } elseif ($value instanceof Raw) {
                 $criteria .= $segment['joiner'] . ' ' . $key . ' ' . $segment['operator'] . ' ' . $value . ' ';
+                $bindings = array_merge($bindings, $value->getBindings());
             } else {
                 if (!$bindValues) {
                     $value = is_null($value) ? $value : $this->quote($value);
