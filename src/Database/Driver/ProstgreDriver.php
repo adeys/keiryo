@@ -22,11 +22,6 @@ class ProstgreDriver extends AbstractDriver
     public function __construct(array $options)
     {
         $this->options = $options;
-
-        try {
-            $this->connect();
-        } catch (PDOException $e) {
-        }
     }
 
     /**
@@ -35,15 +30,19 @@ class ProstgreDriver extends AbstractDriver
     public function connect()
     {
         try {
-            $db = parse_url(getenv("DATABASE_URL"));
+            $db = $this->options['url']
+                ? parse_url($this->options['url'])
+                : $this->options;
+
             $dsn = "pgsql:" . sprintf(
-                    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
-                    $db["host"],
-                    $db["port"],
-                    $db["user"],
-                    $db["pass"],
-                    ltrim($db["path"], "/")
-                );
+                "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+                $db["host"],
+                $db["port"],
+                $db["user"],
+                $db["pass"],
+                ltrim($db["path"], "/")
+            );
+
             $this->pdo = new PDO($dsn);
         } catch (PDOException $e) {
             throw $e;

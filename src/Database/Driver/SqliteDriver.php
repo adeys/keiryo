@@ -20,11 +20,6 @@ class SqliteDriver extends AbstractDriver
     public function __construct(array $options)
     {
         $this->options = $options;
-
-        try {
-            $this->connect();
-        } catch (PDOException $e) {
-        }
     }
 
     /**

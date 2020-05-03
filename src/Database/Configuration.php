@@ -3,6 +3,7 @@
 namespace Keiryo\Database;
 
 use Keiryo\Database\Driver\DriverInterface;
+use Keiryo\Database\Driver\MysqlDriver;
 use Keiryo\Database\Driver\ProstgreDriver;
 use Keiryo\Database\Driver\SqliteDriver;
 
@@ -26,7 +27,8 @@ class Configuration
      */
     protected $drivers = [
         'sqlite' => SqliteDriver::class,
-        'prostgre' => ProstgreDriver::class
+        'prostgre' => ProstgreDriver::class,
+        'mysql' => MysqlDriver::class
     ];
 
     public function __construct(array $options)
@@ -47,12 +49,12 @@ class Configuration
         $driver = $this->drivers[$options['type']] ?? null;
         if (!$driver) {
             throw new \UnexpectedValueException(sprintf(
-                'Provided database type is incorrect or is not supported %s',
-                (string)$driver
+                'Provided database type is incorrect or is not supported (%s)',
+                (string)$name
             ));
         }
 
-        return new $driver($options);
+        return new $driver($options['options'] ?? []);
     }
 
     /**
